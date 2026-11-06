@@ -1,7 +1,11 @@
 export async function onRequestGet(context) {
-  return new Response("Auth endpoint is alive", {
-    headers: {
-      "content-type": "text/plain"
-    }
-  });
+
+  const client_id = context.env.GITHUB_CLIENT_ID;
+
+  const url =
+    "https://github.com/login/oauth/authorize" +
+    "?client_id=" + client_id;
+
+  return Response.redirect(url, 302);
+
 }
