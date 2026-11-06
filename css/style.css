@@ -74,6 +74,28 @@ body {
    SLIDESHOW
    ===================================================== */
 
+
+.caption {
+
+    position: absolute;
+
+    bottom: 30px;
+    left: 30px;
+
+    color: white;
+
+    font-size: 1.1rem;
+
+    padding: 8px 14px;
+
+    background: rgba(0,0,0,0.4);
+
+    backdrop-filter: blur(6px);
+
+    border-radius: 20px;
+
+}
+
 .slideshow {
 
     position: absolute;
