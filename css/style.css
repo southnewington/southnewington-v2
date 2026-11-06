@@ -300,6 +300,68 @@ main {
 
 }
 
+/* =====================================================
+   EVENTS
+   ===================================================== */
+
+.event-card {
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+.event-date {
+
+    min-width: 120px;
+
+    font-weight: bold;
+
+    color: var(--primary);
+
+}
+
+.event-content h2 {
+
+    margin-bottom: 10px;
+
+}
+
+.tags {
+
+    margin-top: 15px;
+
+}
+
+.tag {
+
+    display: inline-block;
+
+    background: #e7eef7;
+
+    color: var(--primary);
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 0.9rem;
+
+    margin-right: 6px;
+
+}
+
 
 /* =====================================================
    HIGHLIGHT
