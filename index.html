@@ -5,120 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>South Newington</title>
 
-    <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background: #f5f7fa;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.45),
-        rgba(0, 0, 0, 0.45)
-    ),
-    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600");
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2rem;
-}
-
-nav {
-    background: white;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    position: sticky;
-    top: 0;
-}
-
-nav a {
-    color: #003366;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 0 15px;
-}
-
-nav a:hover {
-    color: #0078d4;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.card {
-    background: white;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-}
-
-footer {
-    text-align: center;
-    margin-top: 50px;
-    padding: 30px;
-    color: #666;
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-}
-</style>
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>South Newington</h1>
-    <p>Village Information and Community Resources</p>
-</header>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>South Newington</h1>
+            <p>Historic Village in North Oxfordshire</p>
+        </div>
+    </header>
 
-<nav>
-    <a href="/">Home</a>
-    <a href="newsletters.html">Newsletters</a>
-    <a href="village-hall.html">Village Hall</a>
-    <a href="history.html">History</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="newsletters.html">Newsletters</a>
+        <a href="village-hall.html">Village Hall</a>
+        <a href="history.html">History</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<div class="hero">
-    <h2>Welcome to South Newington</h2>
-    <p>
-        This is the new website currently under development.
-    </p>
-</div>
+    <main>
 
-<footer>
-    © South Newington
-</footer>
+        <section class="intro">
+            <h2>Welcome</h2>
+
+            <p>
+                South Newington is a picturesque village in North Oxfordshire,
+                surrounded by beautiful countryside and a strong community spirit.
+            </p>
+
+            <p>
+                This website provides local information, village news,
+                community resources and access to the newsletter archive.
+            </p>
+        </section>
+
+
+        <section class="cards">
+
+            <a href="newsletters.html" class="card">
+                <h3>Newsletters</h3>
+                <p>Browse current and historic village newsletters.</p>
+            </a>
+
+            <a href="village-hall.html" class="card">
+                <h3>Village Hall</h3>
+                <p>Facilities, events and booking information.</p>
+            </a>
+
+            <a href="history.html" class="card">
+                <h3>Village History</h3>
+                <p>Discover South Newington's heritage and stories.</p>
+            </a>
+
+        </section>
+
+
+        <section class="highlight">
+
+            <h2>Latest Information</h2>
+
+            <p>
+                Add important village notices, upcoming events
+                or community updates here.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; South Newington
+    </footer>
 
 </body>
 </html>
