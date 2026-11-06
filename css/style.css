@@ -34,24 +34,26 @@ body {
 
 .hero {
 
-    height: 70vh;
+    position: relative;
 
-    background:
-        linear-gradient(
-            rgba(0,0,0,0.35),
-            rgba(0,0,0,0.35)
-        ),
-        url("../images/image-church.jpg");
+    height: 45vh;
+    min-height: 350px;
 
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
 
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    text-align: center;
     color: white;
+    text-align: center;
+
+}
+
+.hero-content {
+
+    position: relative;
+    z-index: 10;
 
 }
 
@@ -68,6 +70,100 @@ body {
 
 }
 
+/* =====================================================
+   SLIDESHOW
+   ===================================================== */
+
+.slideshow {
+
+    position: absolute;
+    inset: 0;
+
+}
+
+.slide {
+
+    position: absolute;
+    inset: 0;
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0;
+
+    animation: fadeShow 24s infinite;
+
+}
+
+/* Dark overlay */
+
+.slide::after {
+
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.35);
+
+}
+
+.slide:nth-child(1) {
+
+    background-image: url("../images/hero1.jpg");
+
+    animation-delay: 0s;
+
+}
+
+.slide:nth-child(2) {
+
+    background-image: url("../images/hero2.jpg");
+
+    animation-delay: 6s;
+
+}
+
+.slide:nth-child(3) {
+
+    background-image: url("../images/hero3.jpg");
+
+    animation-delay: 12s;
+
+}
+
+.slide:nth-child(4) {
+
+    background-image: url("../images/hero4.jpg");
+
+    animation-delay: 18s;
+
+}
+
+
+@keyframes fadeShow {
+
+    0% {
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
 
 /* =====================================================
    NAVIGATION
